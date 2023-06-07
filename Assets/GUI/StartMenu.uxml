@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/GUIStyles.uss?fileID=7433441132597879392&amp;guid=c255e77c837bdd87bbdb1f905e37f975&amp;type=3#GUIStyles" />
+    <ui:VisualElement name="Menu" class="basicPanel" style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; height: 350px; justify-content: center; align-items: center; max-height: none; width: 400px;">
+        <ui:Label text="STELLAR EXPLORERS" display-tooltip-when-elided="true" name="Title" style="margin-bottom: 15px; font-size: 36px; -unity-font-style: bold; -unity-text-align: middle-center; color: rgb(154, 215, 255); -unity-text-outline-width: 0; -unity-text-outline-color: rgb(66, 92, 109); letter-spacing: 22px; align-items: center; justify-content: center; background-color: rgba(66, 92, 109, 0); white-space: normal;" />
+        <ui:Button text="START NEW GAME" display-tooltip-when-elided="true" name="StartGame" class="basicPanel coloredText MenuBtn" style="padding-left: 15px; padding-right: 15px; font-size: 18px;" />
+        <ui:Button text="EXIT GAME" display-tooltip-when-elided="true" name="ExitGame" class="basicPanel coloredText MenuBtn" style="padding-left: 15px; padding-right: 15px; font-size: 18px;" />
+    </ui:VisualElement>
+</ui:UXML>

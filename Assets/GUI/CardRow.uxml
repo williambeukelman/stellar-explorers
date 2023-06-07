@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/GUIStyles.uss?fileID=7433441132597879392&amp;guid=c255e77c837bdd87bbdb1f905e37f975&amp;type=3#GUIStyles" />
+    <ui:VisualElement name="CardRow" class="label" style="flex-direction: row; justify-content: space-between; flex-wrap: nowrap; white-space: normal; align-items: flex-start;">
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="Label" style="flex-wrap: wrap; flex-direction: row; white-space: normal;" />
+        <ui:Label text="Value" display-tooltip-when-elided="true" name="Value" class="coloredText" style="flex-wrap: nowrap; flex-direction: column; white-space: normal; flex-shrink: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

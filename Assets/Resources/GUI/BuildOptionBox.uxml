@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="BuildOptionBox" class="buildOptionBox">
+        <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" />
+        <ui:Label text="HOUSE" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

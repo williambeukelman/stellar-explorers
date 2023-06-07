@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/GUIStyles.uss?fileID=7433441132597879392&amp;guid=c255e77c837bdd87bbdb1f905e37f975&amp;type=3#GUIStyles" />
+    <ui:VisualElement name="BtnName" class="basicPanel btnHoverColor" style="width: 130px; align-items: center; justify-content: flex-start;">
+        <ui:Label text="Exit Game" display-tooltip-when-elided="true" class="coloredText" />
+    </ui:VisualElement>
+</ui:UXML>

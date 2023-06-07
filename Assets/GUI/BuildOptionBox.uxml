@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GUI/GUIStyles.uss?fileID=7433441132597879392&amp;guid=c255e77c837bdd87bbdb1f905e37f975&amp;type=3#GUIStyles" />
+    <ui:VisualElement name="BuildOptionBox" class="buildOptionBox" style="width: 75px;">
+        <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" />
+        <ui:Label text="SOLAR ARRAY" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

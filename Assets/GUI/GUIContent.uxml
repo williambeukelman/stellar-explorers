@@ -1,0 +1,263 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="CardRow" src="project://database/Assets/GUI/CardRow.uxml?fileID=9197481963319205126&amp;guid=ccc41a84e06e423e8a2a97bffae4e14c&amp;type=3#CardRow" />
+    <ui:Template name="GenericBtn" src="project://database/Assets/Resources/GUI/GenericBtn.uxml?fileID=9197481963319205126&amp;guid=bce8e9a54c237e0348b449f8802edb55&amp;type=3#GenericBtn" />
+    <Style src="project://database/Assets/GUI/GUIStyles.uss?fileID=7433441132597879392&amp;guid=c255e77c837bdd87bbdb1f905e37f975&amp;type=3#GUIStyles" />
+    <ui:VisualElement name="TopRow" class="row" style="justify-content: flex-start;">
+        <ui:VisualElement name="BuildMenuBorder" class="basicPanel" style="width: 39px; height: 39px; position: absolute;" />
+        <ui:Button display-tooltip-when-elided="true" name="BtnOpenBuildMenu" class="basicPanel" style="height: auto; width: auto; position: absolute; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; left: 2px; top: 2px; background-color: rgba(61, 85, 101, 0);">
+            <ui:VisualElement name="IconTool" class="icon" />
+        </ui:Button>
+        <ui:VisualElement name="BuildMenu" class="basicPanel" style="height: auto; width: 420px; flex-grow: 0; flex-shrink: 1; display: flex; min-width: 200px; max-width: 420px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-image: none; -unity-background-image-tint-color: rgba(255, 255, 255, 0.34);">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto;">
+                <ui:Label text="BUILD MENU" display-tooltip-when-elided="true" name="BuildLabel" class="box-label" style="margin-left: 40px; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody buildMenuGrid">
+                <ui:ScrollView name="BuildMenuScrollGrid" mode="Vertical" horizontal-page-size="4" vertical-page-size="10" horizontal-scroller-visibility="Hidden" touch-scroll-type="Unrestricted" nested-interaction-kind="Default" vertical-scroller-visibility="Auto" usage-hints="None" style="width: 400px; align-items: flex-start; height: 190px; flex-wrap: wrap; flex-direction: row; justify-content: space-around; overflow: hidden; padding-bottom: 0; margin-bottom: 0; flex-shrink: 0; flex-grow: 1; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-left-color: rgb(66, 92, 109); border-right-color: rgb(66, 92, 109); border-top-color: rgb(66, 92, 109); border-bottom-color: rgb(66, 92, 109); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-color: rgba(66, 92, 109, 0.49);">
+                    <ui:VisualElement name="BuildGrid" class="buildMenuGrid" style="flex-wrap: wrap; padding-bottom: 3px; align-items: flex-start; justify-content: space-between; width: 370px; height: 200px; overflow: visible; background-image: none; top: 0; flex-grow: 1; flex-shrink: 0; margin-bottom: 0;">
+                        <ui:VisualElement name="BuildOptionBox" class="buildOptionBox">
+                            <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" style="background-image: url(&apos;project://database/Assets/GUI/house_avatar.png?fileID=2800000&amp;guid=d325bb0f8eb0b521ab0fa3e2e4eb7834&amp;type=3#house_avatar&apos;); -unity-background-image-tint-color: rgb(154, 215, 255); background-color: rgba(0, 0, 0, 0.14);" />
+                            <ui:Label text="HOUSE" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="BuildOptionBox" class="buildOptionBox">
+                            <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" style="background-image: url(&apos;project://database/Assets/GUI/house_avatar.png?fileID=2800000&amp;guid=d325bb0f8eb0b521ab0fa3e2e4eb7834&amp;type=3#house_avatar&apos;); -unity-background-image-tint-color: rgb(154, 215, 255); background-color: rgba(0, 0, 0, 0.14); width: 75px; -unity-background-scale-mode: scale-to-fit;" />
+                            <ui:Label text="SOLAR ARRAY" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; flex-wrap: wrap; white-space: normal; width: 75px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="BuildOptionBox" class="buildOptionBox">
+                            <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" style="background-image: url(&apos;project://database/Assets/GUI/house_avatar.png?fileID=2800000&amp;guid=d325bb0f8eb0b521ab0fa3e2e4eb7834&amp;type=3#house_avatar&apos;); -unity-background-image-tint-color: rgb(154, 215, 255); background-color: rgba(0, 0, 0, 0.14);" />
+                            <ui:Label text="MINING RIG" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; flex-wrap: wrap; width: 75px; white-space: normal;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="BuildOptionBox" class="buildOptionBox">
+                            <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" style="background-image: url(&apos;project://database/Assets/GUI/house_avatar.png?fileID=2800000&amp;guid=d325bb0f8eb0b521ab0fa3e2e4eb7834&amp;type=3#house_avatar&apos;); -unity-background-image-tint-color: rgb(154, 215, 255); background-color: rgba(0, 0, 0, 0.14);" />
+                            <ui:Label text="SPACECRAFT" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="BuildOptionBox" class="buildOptionBox" style="margin-bottom: 5px; padding-bottom: 0;">
+                            <ui:VisualElement name="HouseAvatar" class="buildOptionImageSlot" style="background-image: url(&apos;project://database/Assets/GUI/house_avatar.png?fileID=2800000&amp;guid=d325bb0f8eb0b521ab0fa3e2e4eb7834&amp;type=3#house_avatar&apos;); -unity-background-image-tint-color: rgb(154, 215, 255); background-color: rgba(0, 0, 0, 0.14);" />
+                            <ui:Label text="LASER TURRET" display-tooltip-when-elided="true" name="Label" class="coloredText buildOptionTitlebar" style="margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BuildDetails" class="basicPanel" style="width: 300px; height: 240px; left: -5px; border-left-width: 2px; background-color: rgba(67, 80, 91, 0.89); flex-wrap: nowrap; border-bottom-left-radius: 10px; border-top-left-radius: 10px; border-left-color: rgba(154, 215, 255, 0.46); border-right-color: rgba(154, 215, 255, 0.46); border-top-color: rgba(154, 215, 255, 0.46); border-bottom-color: rgba(154, 215, 255, 0.46); overflow: hidden; margin-right: 0; margin-left: 0; background-image: url(&apos;project://database/Assets/GUI/boxshadow%201.png?fileID=2800000&amp;guid=d9d19520c7fee7ec798a30b0c2b8e079&amp;type=3#boxshadow 1&apos;); -unity-background-scale-mode: stretch-to-fill; -unity-background-image-tint-color: rgba(255, 255, 255, 0.25); visibility: visible; opacity: 1; translate: 0 0;">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto; justify-content: center;">
+                <ui:Label text="HOUSE" display-tooltip-when-elided="true" name="BuildDetailsName" class="box-label" style="margin-left: 0; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center; border-right-width: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody buildMenuGrid" style="width: auto; height: auto; flex-wrap: nowrap; flex-direction: column; visibility: visible; overflow: hidden; font-size: 14px;">
+                <ui:VisualElement name="DetailRow" class="coloredText" style="flex-direction: row; flex-grow: 1; flex-shrink: 0; justify-content: space-around; background-color: rgba(164, 196, 222, 0.33); flex-wrap: nowrap; overflow: visible; align-items: flex-start; white-space: normal; width: 100%; padding-bottom: 0; margin-bottom: 3px;">
+                    <ui:Label text="basic habitation for the people of your colony." display-tooltip-when-elided="true" name="Description" style="align-items: flex-start; flex-direction: row; flex-wrap: nowrap; white-space: normal; font-size: 14px; -unity-text-align: upper-left; visibility: visible; overflow: visible;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="DetailRow" class="coloredText" style="flex-direction: row; flex-grow: 1; flex-shrink: 0; justify-content: space-between; background-color: rgba(165, 197, 223, 0.33); width: 100%; margin-bottom: 3px;">
+                    <ui:Label text="Materials" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+                    <ui:Label text="2ton" display-tooltip-when-elided="true" name="MaterialCost" style="font-size: 14px; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="DetailRow" class="coloredText" style="flex-direction: row; flex-grow: 1; flex-shrink: 0; justify-content: space-between; background-color: rgba(165, 197, 223, 0.33); width: 100%; margin-bottom: 3px;">
+                    <ui:Label text="energy consumption" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+                    <ui:Label text="5kwh" display-tooltip-when-elided="true" name="EnergyCost" style="font-size: 14px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="DetailRow" class="coloredText" style="flex-direction: row; flex-grow: 1; flex-shrink: 0; justify-content: space-between; background-color: rgba(165, 197, 223, 0.33); width: 100%; margin-bottom: 3px;">
+                    <ui:Label text="energy production" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+                    <ui:Label text="5kwh" display-tooltip-when-elided="true" name="EnergyProd" style="font-size: 14px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Notifications" tabindex="0" picking-mode="Ignore" class="basicPanel" style="flex-direction: row; align-items: center; justify-content: space-between; opacity: 1; display: flex; visibility: visible;">
+            <ui:VisualElement name="InfoIcon" picking-mode="Ignore" style="background-image: url(&apos;project://database/Assets/GUI/alert-triangle.png?fileID=2800000&amp;guid=adfa43f78b20146dc8422e5e2ebac763&amp;type=3#alert-triangle&apos;); width: 22px; height: 22px; -unity-background-image-tint-color: rgb(154, 215, 255); -unity-background-scale-mode: stretch-to-fill;" />
+            <ui:Label text="you cannot build there" display-tooltip-when-elided="true" name="NotificationValue" picking-mode="Ignore" class="coloredText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Timer" tabindex="0" picking-mode="Ignore" class="basicPanel" style="flex-direction: row; align-items: center; justify-content: space-between; opacity: 1; display: flex; visibility: visible; border-left-color: rgb(228, 155, 100); border-right-color: rgb(228, 155, 100); border-top-color: rgb(228, 155, 100); border-bottom-color: rgb(228, 155, 100); background-color: rgba(166, 113, 73, 0.62); position: absolute; right: 0; left: auto;">
+            <ui:VisualElement name="InfoIcon" picking-mode="Ignore" style="background-image: url(&apos;project://database/Assets/GUI/crosshair.png?fileID=2800000&amp;guid=5ed0ccdacca146665ac2c8ae5f3e6508&amp;type=3#crosshair&apos;); width: 22px; height: 22px; -unity-background-image-tint-color: rgb(255, 173, 112); -unity-background-scale-mode: stretch-to-fill;" />
+            <ui:Label text="15:00:00 min:s:ms" display-tooltip-when-elided="true" name="TimerValue" picking-mode="Ignore" style="color: rgb(255, 174, 112); padding-left: 5px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="BottomRow" class="row" style="bottom: 0; position: absolute; height: 220px; align-items: auto; justify-content: space-between;">
+        <ui:VisualElement name="ResourceMenuBorder" class="basicPanel" style="width: 39px; height: 39px; position: absolute;" />
+        <ui:Button display-tooltip-when-elided="true" name="BtnResourceMenu" class="basicPanel" style="height: auto; width: auto; position: absolute; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; left: 2px; top: 2px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgba(61, 85, 101, 0);">
+            <ui:VisualElement name="IconPackage" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/package.png?fileID=2800000&amp;guid=bfd6c954870fa3fc18d74a08baa25025&amp;type=3#package&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        </ui:Button>
+        <ui:VisualElement name="ResourceMenu" class="basicPanel" style="width: auto; height: 200px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; display: flex; background-image: none; -unity-background-image-tint-color: rgba(255, 255, 255, 0.32);">
+            <ui:VisualElement name="CardHead" style="align-items: flex-start;">
+                <ui:Label text="RESOURCE MENU" display-tooltip-when-elided="true" name="ResourceLabel" class="box-label" style="width: auto; padding-left: 10px; padding-right: 10px; -unity-text-align: lower-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody" style="margin-top: 10px;" />
+            <ui:ScrollView name="ResourceMenuScrollGrid" mode="VerticalAndHorizontal" horizontal-page-size="4" vertical-page-size="5" horizontal-scroller-visibility="Hidden" touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="AlwaysVisible" style="width: 350px; align-items: flex-start; height: 190px; flex-wrap: wrap; flex-direction: row; justify-content: space-around; margin-top: 10px;">
+                <ui:VisualElement name="ResourceGrid" class="buildMenuGrid" style="width: 325px; height: 160px;">
+                    <ui:VisualElement name="CardRow" class="label">
+                        <ui:Label text="POPULATION" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Label text="5" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CardRow" class="label">
+                        <ui:Label text="ORE RESERVES" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Label text="234 tons" display-tooltip-when-elided="true" name="OreVal" class="coloredText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CardRow" class="label">
+                        <ui:Label text="MINING PRODUCTION" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Label text="10 ton/min" display-tooltip-when-elided="true" name="MineProdVal" class="coloredText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CardRow" class="label" style="justify-content: space-between; flex-grow: 1; flex-shrink: 0; flex-direction: row; flex-wrap: nowrap;">
+                        <ui:Label text="ENERGY PRODUCTION" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Label text="7 MWh" display-tooltip-when-elided="true" name="EnergyProdVal" class="coloredText" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CardRow" class="label" style="justify-content: space-between; flex-grow: 1; flex-shrink: 0; flex-direction: row; flex-wrap: nowrap;">
+                        <ui:Label text="ENERGY USE" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Label text="0 MWh" display-tooltip-when-elided="true" name="EnergyUseVal" class="coloredText" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsBtn" class="basicPanel" style="width: 39px; height: 39px; background-image: none; -unity-background-scale-mode: stretch-to-fill; position: absolute; left: auto; right: 0; top: -50px;">
+            <ui:VisualElement name="SettingsIcon" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/settings.png?fileID=2800000&amp;guid=66e58af6927d50ca797399e92cb852bf&amp;type=3#settings&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="InfoMenuBorder" class="basicPanel" style="width: 39px; height: 39px; position: absolute; left: auto; right: 0;" />
+        <ui:Button display-tooltip-when-elided="true" name="BtnInfoMenu" class="basicPanel" style="height: 39px; width: 39px; position: absolute; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; left: auto; top: 2px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgba(61, 85, 101, 0); right: 3px;">
+            <ui:VisualElement name="IconPackage" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/info.png?fileID=2800000&amp;guid=35d27740595ed711ebe69f8b6715dc90&amp;type=3#info&apos;); -unity-background-image-tint-color: rgb(255, 255, 255); right: -5px;" />
+        </ui:Button>
+        <ui:VisualElement name="InfoMenu" class="basicPanel" style="width: 350px; height: 200px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; display: flex; right: 0; left: auto; position: absolute; background-image: none; -unity-background-image-tint-color: rgba(255, 255, 255, 0.33); -unity-background-scale-mode: stretch-to-fill;">
+            <ui:VisualElement name="CardHead" style="justify-content: flex-start; align-items: flex-end; margin-right: 39px;">
+                <ui:Label text="INFO MENU" display-tooltip-when-elided="true" name="InfoLabel" class="box-label" style="margin-left: 0; -unity-text-align: lower-right; padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 10px; width: auto; margin-top: 5px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody" style="margin-top: 10px;" />
+            <ui:ScrollView name="BuildMenuScrollGrid" mode="VerticalAndHorizontal" horizontal-page-size="4" vertical-page-size="5" horizontal-scroller-visibility="Hidden" touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="AlwaysVisible" style="width: 350px; align-items: flex-start; height: 190px; flex-wrap: wrap; flex-direction: row; justify-content: space-around; margin-top: 10px;">
+                <ui:VisualElement name="InfoGrid" class="buildMenuGrid" style="width: 325px; height: 160px; justify-content: center;">
+                    <ui:Instance template="CardRow" name="CardRow" style="width: 100%;">
+                        <AttributeOverrides element-name="Label" text="LABEL" />
+                        <AttributeOverrides element-name="Value" text="INFORMATION" />
+                    </ui:Instance>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Overlay" style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.84); justify-content: center; align-items: center; flex-direction: row; display: none;">
+        <ui:VisualElement name="SettingsMenu" class="basicPanel" style="width: 500px; height: 500px; justify-content: flex-start;">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto; justify-content: flex-start; align-items: center;">
+                <ui:VisualElement name="SettingsCloseBtn" class="btnHoverEffect" style="width: 39px; height: 39px; background-image: none; -unity-background-scale-mode: stretch-to-fill; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="SettingsIcon" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/settings.png?fileID=2800000&amp;guid=66e58af6927d50ca797399e92cb852bf&amp;type=3#settings&apos;);" />
+                </ui:VisualElement>
+                <ui:Label text="SETTINGS MENU" display-tooltip-when-elided="true" name="SettingsLabel" class="box-label" style="margin-left: 10px; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:Slider picking-mode="Ignore" label="Music Volume" value="0.5" high-value="1" name="MusicSlider" class="coloredText" />
+            <ui:Slider picking-mode="Ignore" label="Sound Effects" value="0.5" high-value="1" name="EffectsSlider" direction="Horizontal" class="coloredText" />
+            <ui:Slider picking-mode="Ignore" label="Interface Sounds" value="0.5" high-value="1" name="InterfaceSlider" class="coloredText" />
+            <ui:VisualElement name="CardBody" class="cardBody" style="height: auto; align-items: flex-start; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+                <ui:Instance template="GenericBtn" name="ExitBtn" />
+                <ui:VisualElement name="SaveBtn" class="basicPanel btnHoverColor" style="width: 130px; align-items: center;">
+                    <ui:Label text="Save Game" display-tooltip-when-elided="true" class="coloredText" />
+                </ui:VisualElement>
+                <ui:ScrollView name="ScrollGrid" mode="Vertical" horizontal-page-size="4" vertical-page-size="25" horizontal-scroller-visibility="Hidden" touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="AlwaysVisible" style="width: 500px; align-items: flex-start; height: 254px; flex-wrap: wrap; flex-direction: row; justify-content: center; margin-top: 10px;">
+                    <ui:VisualElement name="Grid" class="buildMenuGrid" style="width: 451px; height: 253px; justify-content: flex-start;">
+                        <ui:Label text="Movement" display-tooltip-when-elided="true" class="coloredText" />
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="W A S D" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="move around / orbit" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="click" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="select planet / object" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="tab" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="cycle planet" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="1 2 3 .." display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="quickselect planet" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:Label text="Building" display-tooltip-when-elided="true" class="coloredText" />
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="[ ]" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="rotate building" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="left click" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="place" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="right click" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="cancel" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:Label text="General" display-tooltip-when-elided="true" class="coloredText" />
+                        <ui:VisualElement name="CardRow" class="label">
+                            <ui:Label text="esc" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Label text="this menu" display-tooltip-when-elided="true" name="PopVal" class="coloredText" />
+                        </ui:VisualElement>
+                        <ui:Label text="credits" display-tooltip-when-elided="true" class="coloredText" style="font-size: 28px; -unity-text-align: upper-center; align-items: auto; width: 100%;" />
+                        <ui:Label text="Space Jazz by Kevin MacLeod | https://incompetech.com/&#10;Music promoted by https://www.chosic.com/free-music/all/&#10;Creative Commons CC BY 3.0&#10;https://creativecommons.org/licenses/by/3.0/&#10;" display-tooltip-when-elided="true" class="coloredText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Label text="Solar &amp; Planet Texture from &#10;https://www.solarsystemscope.com/textures/&#10;Creative Commons CC BY 4.0&#10;https://creativecommons.org/licenses/by/3.0/" display-tooltip-when-elided="true" class="coloredText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Label text="Models and sounds from&#10;https://kenney.nl/assets/space-kit&#10;https://kenney.nl/assets/nature-kit&#10;https://kenney.nl/assets/city-kit-commercial&#10;https://kenney.nl/assets/interface-sounds&#10;" display-tooltip-when-elided="true" class="coloredText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Label text="Zector Font from&#10;https://www.dafont.com/zector.font&#10;licensed under the SIL Open Font License, Version 1.1." display-tooltip-when-elided="true" class="coloredText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; -unity-text-align: upper-center;" />
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="LaunchOverlay" style="position: absolute; width: 100%; height: 100%; background-color: rgba(45, 63, 74, 0.7); justify-content: center; align-items: center; flex-direction: row; display: none; background-image: none; top: 0; left: 0;">
+        <ui:VisualElement name="Launch" class="basicPanel" style="width: 400px; height: 400px; justify-content: flex-start; background-image: url(&apos;project://database/Assets/GUI/boxshadow%201.png?fileID=2800000&amp;guid=d9d19520c7fee7ec798a30b0c2b8e079&amp;type=3#boxshadow 1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.26); background-color: rgba(51, 71, 85, 0.84);">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto; justify-content: flex-start; align-items: center;">
+                <ui:VisualElement name="LaunchCloseBtn" class="btnHoverEffect" style="width: 39px; height: 39px; background-image: none; -unity-background-scale-mode: stretch-to-fill; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="CloseIcon" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/anchor.png?fileID=2800000&amp;guid=8889cecef6316623ba39056c8f310a51&amp;type=3#anchor&apos;);" />
+                </ui:VisualElement>
+                <ui:Label text="LAUNCH MENU" display-tooltip-when-elided="true" name="Label" class="box-label" style="margin-left: 10px; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody" style="height: auto; align-items: center; justify-content: center; flex-direction: column;">
+                <ui:ScrollView name="ScrollGrid" mode="Vertical" horizontal-page-size="4" vertical-page-size="5" horizontal-scroller-visibility="Hidden" touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="Auto" style="width: 350px; align-items: flex-start; height: 300px; flex-wrap: wrap; flex-direction: row; justify-content: center; margin-top: 10px;">
+                    <ui:VisualElement name="Grid" class="buildMenuGrid" style="width: 356px; height: 272px; justify-content: center;">
+                        <ui:RadioButtonGroup label="Planets" value="-1" choices="Orvekeliopotamos,Atla,Tores, Orvek,Atla,Tores" name="PlanetTargets" class="coloredText" style="flex-direction: column; align-items: flex-start; font-size: 18px; overflow: visible;" />
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <ui:VisualElement name="LaunchBtn" class="basicPanel btnHoverColor" style="width: 130px; align-items: center;">
+                    <ui:Label text="Launch Ship" display-tooltip-when-elided="true" class="coloredText" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="WarningOverlay" style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; flex-direction: row; display: none; background-image: none; top: 0; left: 0;">
+        <ui:VisualElement name="Warning" class="basicPanel" style="width: 500px; height: 500px; justify-content: flex-start; background-image: url(&apos;project://database/Assets/GUI/boxshadow%201.png?fileID=2800000&amp;guid=d9d19520c7fee7ec798a30b0c2b8e079&amp;type=3#boxshadow 1&apos;); -unity-background-image-tint-color: rgba(255, 174, 112, 0.26); background-color: rgba(47, 32, 21, 0.84); border-left-color: rgb(255, 174, 112); border-right-color: rgb(255, 174, 112); border-top-color: rgb(255, 174, 112); border-bottom-color: rgb(255, 174, 112);">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto; justify-content: flex-start; align-items: center;">
+                <ui:VisualElement name="WaningCloseBtn" class="btnHoverEffect" style="width: 39px; height: 39px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="CloseIcon" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/alert-triangle.png?fileID=2800000&amp;guid=adfa43f78b20146dc8422e5e2ebac763&amp;type=3#alert-triangle&apos;); -unity-background-image-tint-color: rgb(255, 174, 112);" />
+                </ui:VisualElement>
+                <ui:Label text="scientific report" display-tooltip-when-elided="true" name="Label" class="box-label" style="margin-left: 10px; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center; color: rgb(255, 174, 112); border-left-color: rgb(255, 174, 112); border-right-color: rgb(255, 174, 112); border-top-color: rgb(255, 174, 112); border-bottom-color: rgb(255, 174, 112);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody" style="height: auto; align-items: center; justify-content: center; flex-direction: column;">
+                <ui:ScrollView name="OrangeScrollGrid" mode="Vertical" horizontal-page-size="4" vertical-page-size="5" horizontal-scroller-visibility="Hidden" touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="Auto" style="width: 450px; align-items: flex-start; height: 400px; flex-wrap: wrap; flex-direction: row; justify-content: center; margin-top: 10px;">
+                    <ui:VisualElement name="Grid" class="buildMenuGrid" style="width: 456px; height: 372px; justify-content: flex-start; flex-direction: column; flex-wrap: nowrap; align-items: flex-start;">
+                        <ui:Label text="Your top scientific minds have been tracking a comet and now beyond any reasonable doubt, it has become clear that it will impact our fledging colony with no chance of survival. The recomended course of action is to gather enough ore as quickly as possible and build a rocket in order to set up a new colony on another nearby world." display-tooltip-when-elided="true" name="WarningInformation" class="coloredText orangeText" />
+                        <ui:Label text="Your command center has 3 main areas that will assist you: &#10;&#10;1. the resource panel in the bottom left displays the current resources, &#10;&#10;2. The building menu in the top left is where you can see the costs for new construction and order new building, including the escape rocket. &#10;&#10;3. The info panel gives neccesary information on whatever is being inspected. This should be useful when evaluating a suitable new planet as well. Finally there is a countdown timer to track the comet&apos;s approach." display-tooltip-when-elided="true" name="WarningInformation" class="coloredText orangeText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; padding-bottom: 0; margin-bottom: 0; color: rgb(255, 150, 69);" />
+                        <ui:Label text="The clones you are managing are somewhat aimless initially, clicking on the colony center should give you some ideas on how to use them." display-tooltip-when-elided="true" name="WarningInformation" class="coloredText orangeText" style="flex-wrap: wrap; flex-direction: row; white-space: normal; margin-top: 111px; padding-top: 0;" />
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <ui:VisualElement name="WarningBtn" class="basicPanel btnHoverOrange" style="width: 130px; align-items: center; border-left-color: rgb(255, 174, 112); border-right-color: rgb(255, 174, 112); border-top-color: rgb(255, 174, 112); border-bottom-color: rgb(255, 174, 112); background-color: rgb(134, 91, 59);">
+                    <ui:Label text="close" display-tooltip-when-elided="true" class="coloredText" style="color: rgb(255, 174, 112); margin-top: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="DeathScreen" style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; flex-direction: column; display: none; background-image: none; top: 0; left: 0;">
+        <ui:Label text="Desolation" display-tooltip-when-elided="true" style="font-size: 40px; color: rgb(255, 255, 255);" />
+        <ui:Label text="gaze upon the consequences on your struggle, all those you have lead are no more&#10;but the indifferent universe marches on, unbothered by your triumphs and misfortune." display-tooltip-when-elided="true" style="font-size: 20px; color: rgb(255, 255, 255); width: 500px; flex-wrap: wrap; flex-direction: row; white-space: normal; -unity-text-align: middle-center; -unity-font-style: bold; letter-spacing: 0; word-spacing: 0; -unity-paragraph-spacing: 50px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="ColonyOverlay" style="position: absolute; width: 100%; height: 100%; background-color: rgba(45, 63, 74, 0); justify-content: center; align-items: center; flex-direction: row; display: none; background-image: none; top: 0; left: 0;">
+        <ui:VisualElement name="Colony" class="basicPanel" style="width: 400px; height: 300px; justify-content: flex-start; background-image: none; -unity-background-image-tint-color: rgba(255, 255, 255, 0.26); background-color: rgba(51, 71, 85, 0.84);">
+            <ui:VisualElement name="CardHead" class="headerRow" style="height: auto; justify-content: flex-start; align-items: center;">
+                <ui:VisualElement name="ColonyCloseBtn" class="btnHoverEffect" style="width: 39px; height: 39px; background-image: none; -unity-background-scale-mode: stretch-to-fill; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="CloseIcon" class="icon" style="background-image: url(&apos;project://database/Assets/GUI/home.png?fileID=2800000&amp;guid=35f218fef9f236c00a4ac0ccafd7a62e&amp;type=3#home&apos;);" />
+                </ui:VisualElement>
+                <ui:Label text="Colony MENU" display-tooltip-when-elided="true" name="Label" class="box-label" style="margin-left: 10px; width: auto; padding-left: 10px; padding-right: 10px; -unity-font: url(&apos;project://database/Assets/GUI/Zector.ttf?fileID=12800000&amp;guid=9ab0afeffd39cbc5a88b65741ce6d220&amp;type=3#Zector&apos;); font-size: 16px; -unity-font-definition: initial; -unity-font-style: bold; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CardBody" class="cardBody" style="height: auto; align-items: center; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+                <ui:Label text="Give the clones in your colony tasks." display-tooltip-when-elided="true" class="coloredText" />
+                <ui:VisualElement name="ColonyMineBtn" class="basicPanel btnHoverColor" style="width: auto; align-items: center; flex-direction: row; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+                    <ui:Label text="Mine" display-tooltip-when-elided="true" class="coloredText" style="align-items: auto; justify-content: flex-start; -unity-text-align: upper-left; margin-left: 10px; margin-right: 10px; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ColonyCloneBtn" class="basicPanel btnHoverColor" style="width: auto; align-items: center; flex-direction: row; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+                    <ui:Label text="Clone" display-tooltip-when-elided="true" class="coloredText" style="align-items: auto; justify-content: flex-start; -unity-text-align: upper-left; margin-left: 10px; margin-right: 10px; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ColonyBuildBtn" class="basicPanel btnHoverColor" style="width: auto; align-items: center; flex-direction: row; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+                    <ui:Label text="Build" display-tooltip-when-elided="true" class="coloredText" style="align-items: auto; justify-content: flex-start; -unity-text-align: upper-left; margin-left: 10px; margin-right: 10px; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ColonyWanderBtn" class="basicPanel btnHoverColor" style="width: auto; align-items: center; flex-direction: row; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+                    <ui:Label text="Wander" display-tooltip-when-elided="true" class="coloredText" style="align-items: auto; justify-content: flex-start; -unity-text-align: upper-left; margin-left: 10px; margin-right: 10px; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
